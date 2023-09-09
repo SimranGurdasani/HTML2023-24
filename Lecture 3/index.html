@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com/" target="_blank">Google link </a>
+   <a href="/lecture 2/second.html">absolute</a>
+   <a href="../lecture 2/second.html">relative </a> 
+   <!-- idar hamko lec 3 se lec 2 jana pada isliye relative mei ../ (i.e tool to got outside current folder) put kiya varna same folder mei
+     hote toh direct second.html likhte -->
+    <h3>Images in HTML</h3>
+    <!-- img is self closing tag -->
+    <!--src mei image link dalenge(like google link or saved photo ko relative path ya fir absolute path se link kholege)
+         and alt mei if image load nahi hui toh "text unavailable" aese kuch text dalo-->
+         <hr>
+         <img src="https://images.unsplash.com/photo-1683009427666-340595e57e43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60" alt="image unavailable">
+         <img src="../scenery pic.avif" alt="image unavailable">
+         <hr>
+         <!-- always store saved image in static folder then assets folder then images folder -->
+         <img src="/static/assets/images/scenery pic.avif" alt="">
+
+
+         <!-- block elements puri jagah lete hai and inline elements only take space required by them
+        inline elements hi sathmei ayege ,if blockline aya toh niche jayega -->
+        <hr>
+        <h3>Block vs inline elements</h3>
+        <p>Lorem, ipsum dolor</p>
+        <p>Lorem, ipsum</p>
+        <hr>
+        <a href="">Google</a>
+        <a href="">Insta</a>
+        <p>lorem</p>
+        <!-- this p will go in next line bcuz it needs full space -->
+        <h3>Lists</h3>
+        <hr>
+        <!-- ul means unordered list i.e bullet points m show krega list and ul means ordered i.e numbers m show krega  -->
+        <ul>
+            <li>SIMRAN</li>
+            <li>ASHOK</li>
+            <li>GURDASANI</li>
+            <li>CHANDA</li>
+
+        </ul>
+        <!-- type A B C D ayegi -->
+        <ol type="A">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+        </ol>
+    <hr>
+     <h3>Description Lists(dl)</h3>
+<hr>
+<dl>
+    <!-- dt is data term -->
+    <dt>Word 1</dt>
+    <!-- dd is data definition -->
+    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, maiores?</dd>
+
+    <dt>Word 2</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ducimus voluptatibus. Debitis voluptatibus quo atque expedita, deleniti odio autem nihil.</dd>
+</dl>
+<hr>
+<h3>Tables in HTML</h3>
+<!-- tables in html consist of main types- 1) thead and 2)tbody
+thead is header
+tr is particular row 
+th is table head
+td is table data -->
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Y/N</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Simran</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>Vaishali</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>Rohit </td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>Vinod</td>
+            <td>N</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<ul>
+    <li>list itemss</li>
+    <li>list itemss</li>
+    <li>list itemss</li>
+    <li>following list items are required:
+        <!-- Nested lists -->
+        <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ol>
+    </li>
+</ul>
+</body>
+</html>
