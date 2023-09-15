@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- pure form ko group krne ke liye fieldset tag use hota fir using heading using legend tag -->
+   <fieldset>
+    <legend>Signup Form</legend>
+   <form action=""> 
+    <!-- grouping ke liye div use krte hai like name ke horizontal mei input chahiye isliye and 
+        div ke label aur input hote hai  -->
+        <!-- THE USE OF VALUE AND PLACEHOLDER ATTRIBUTES -->
+    <div>
+        <label for="fname">Enter First Name : </label>
+        <input placeholder="Enter first name" type="text" id="fname" name="fname" value="testsbbj">
+    </div>
+    <div>
+        <label for="">Enter score: </label>
+        <input type="number" id="marks" name="scorejfjghv">
+    </div>
+    <div>
+        <label for="">Enter email </label>
+        <input type="email" placeholder="@gmail.com">
+    </div>
+    <div>
+        <label for="">Enter password </label>
+        <input type="password">
+    </div>
+    
+    <div>
+        <!-- radio circle wala button ana chahiye isliye aur name= isliye kyuki inko group krna h
+        varna without grouping ALL options Are getting selected -->
+        <!-- id isliye use hota h taki ham agar circle ko click naa krke if label ko click kre toh vo uss particular 
+        input par cursor dikhae i.e focus hoe-->
+        <input type="radio" name="gender" id="male" >
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" >
+        <label for="female">Female</label>
+           
+        <input type="radio" name="option" id="option1">
+        <label for="option1">option 1</label>
+        <input type="radio" name="option" id="option2" >
+        <label for="option2">option 2</label>
+
+        <!-- METHOD -2 (WITHOUT USING FOR AND ID) idar label k andar hi input liya h so directly label click krne par 
+        radio button i.e circle click ho jyega -->
+        <label >option 1
+            <input type="radio" name="option" >
+        </label>
+        <label >
+            <input type="radio" name="option" >
+            option 2
+        </label>
+    </div>
+
+    <div>
+        <label >test label:
+            <input type="text">
+        </label>
+    </div>
+<!-- TO CLICK MULTIPLE OPTIONS AND ALSO TO UNCHECK THEM checkbox i.e square button attribute is use -->
+    <div>
+        <input type="checkbox" name="opt" value="1" >
+        <label for="">Option 1</label>
+        <input type="checkbox" name="opt" value="2" >
+        <label for="">Option 2</label>
+        <input type="checkbox" name="opt" value="2">
+        <input type="checkbox" name="opt" value="3">
+        <label for="">Option 3</label>
+    </div>
+    
+
+    <!-- Concept of new Types  -->
+    <div>
+        <input type="date" >
+        <input type="file" >
+        <input type="color">
+<input type="hidden" value="10" name="hiddenvalue">    
+
+   <div>
+    <label for="Dropdown">Dropdown</label>
+    <select name="optionkey" id="Dropdown">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+    </select>
+   
+    <div>
+        <!-- ye input nhi, button h isliye -->
+      <button type="submit">Submit</button>
+      <button type="button">Plain Button</button>
+      <button type="reset">reset button</button>
+    </div>
+</form>
+   </fieldset>
+    
+</body>
+</html>
+
+<!-- object = (ye piche kese jayega vo sab h ye)
+{
+    "fname": "Priya",
+    "lname": "Karsi",
+    "score": 50,
+    "gender": "female",
+    "pwd": "test"
+    "opt": "[1,2]"
+    "hiddenvalue" : 10
+    "optionkey" : 3
+
+} 
+object.fname -->
